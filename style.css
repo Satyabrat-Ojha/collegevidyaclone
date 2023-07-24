@@ -5,9 +5,22 @@
   font-family: Poppins, sans-serif !important;
 }
 
+.card {
+  --bs-card-spacer-y: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgb(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+}
+
 /* Navbar */
 
-.navbar {
+/* .navbar {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -111,7 +124,7 @@
 
 .nav-auth .mid {
   padding: 0 4px;
-}
+} */
 
 /* Stats */
 
@@ -122,7 +135,30 @@
   font-size: 16px;
 }
 
+.navbar-brand {
+  padding-left: 1rem;
+}
+.navbar-brand span {
+  font-size: 14px;
+}
+
 /* Course Card */
+
+.me-1 {
+  margin-right: 0.25rem !important;
+}
+.end-0 {
+  right: 0 !important;
+}
+.top-0 {
+  top: 0 !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .rounded-10 {
   border-radius: 10px;
@@ -132,6 +168,171 @@
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.07);
 }
 
-.AdmissionGuide_bg_wrap___Xv_N {
-  margin-top: 3rem;
+.fw-normal {
+  font-weight: 400;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.key-wrapper .key-wrap .icon1 {
+  color: #fb961d;
+}
+.key-wrapper .key-wrap .icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+/* .CourseCard {
+  margin: 1rem 0;
+} */
+
+.CourseCard_course_nav__YBUwy {
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.07);
+}
+
+.CourseCard_cardWrapper__TuN3X {
+  margin-right: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CourseCard_cardWrapper__TuN3X [class~="card-body"] [class~="p-chip"] {
+  background-color: #faebd7;
+}
+
+.CourseCard_cardWrapper__TuN3X
+  [class~="card-body"]
+  [class~="p-chip"]
+  [class~="p-chip-text"] {
+  font-size: 10px;
+  line-height: 0.5;
+}
+
+.CourseCard_cardWrapper__TuN3X [class~="card-body"] [class~="p-chip"] {
+  background-color: #faebd7;
+}
+.p-component,
+.p-inputtext,
+label {
+  font-family: poppins;
+}
+.p-chip {
+  display: inline-flex;
+  align-items: center;
+  background-color: #dee2e6;
+  color: #495057;
+  border-radius: 16px;
+  padding: 0 0.75rem;
+}
+
+.p-chip .p-chip-text {
+  line-height: 1.5;
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+
+.card {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.CourseCard_cardWrapper__TuN3X [class~="card-body"] [class~="card-text"] {
+  font-size: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.bgprimary {
+  background-color: #0056d2;
+}
+
+.translate-middle-y {
+  transform: translateY(-50%) !important;
+}
+
+.start-0 {
+  left: 0 !important;
+}
+.top-50 {
+  top: 50% !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+
+@media (max-width: 1200px) {
+  .CourseCard_course_tabcontent {
+    padding: 10px 5px 0;
+    border-radius: 23px;
+    background-color: #f2f3f8;
+  }
+
+  .CourseCard_cardWrapper__TuN3X {
+    margin-right: 2px;
+    width: calc(33.33% - 2px);
+  }
+  .CourseCard_course_nav__YBUwy {
+    box-shadow: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 10px !important;
+  }
+  .CourseCard_course_nav__YBUwy [class~="nav-item"] {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .CourseCard_course_nav__YBUwy [class~="nav-link"] {
+    color: #000;
+  }
+  .CourseCard_course_nav__YBUwy [class~="nav-link"][class~="active"] {
+    background-color: #fff;
+    color: #0056d2;
+    border-bottom: 2px solid #0056d2;
+  }
+  .CourseCard_course_nav__YBUwy [class~="nav-item"] [class~="nav-link"] {
+    font-size: 12px;
+    padding: 5px 0;
+    border-radius: 0;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 786px) {
+  .key-wrapper {
+    flex-direction: row;
+    margin: 0;
+  }
+  .key-wrapper .key-wrap {
+    flex-direction: column;
+    text-align: center;
+    width: calc(33.33% - 10px);
+    align-items: center !important;
+    background-color: #f2f3f8;
+    margin: 0 5px;
+    border-radius: 6px;
+    padding: 10px 7px;
+  }
+  .key-wrapper .key-wrap .icon {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .key-wrapper .key-wrap .key-title {
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 700;
+  }
+  .key-wrapper .key-wrap .key-content {
+    font-size: 9px;
+    margin-top: 2px !important;
+  }
 }
